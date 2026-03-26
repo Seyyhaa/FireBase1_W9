@@ -1,4 +1,4 @@
-# my_app
+# myfirst_firebase
 
 A new Flutter project.
 

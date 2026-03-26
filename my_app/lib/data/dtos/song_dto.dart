@@ -1,19 +1,21 @@
     import '../../model/songs/song.dart';
 
 class SongDto {
-  static const String idKey = 'id';
-  static const String titleKey = 'name';
-  static const String artistKey = 'artists';
-  static const String durationKey = 'durationMs';   // in ms
+  static const String artistKey = 'artistId';
+  static const String titleKey = 'title';
+  static const String imageUrlKey = 'imageUrl';
+  static const String durationKey = 'duration';   // in ms
 
-  static Song fromJson(Map<String, dynamic> json) {
-    assert(json[idKey] is String);
+  static Song fromJson(Map<String, dynamic> json, String id) {
+    
+    assert(json[imageUrlKey] is String);
     assert(json[titleKey] is String);
     assert(json[artistKey] is String);
     assert(json[durationKey] is int);
 
     return Song(
-      id: json[idKey],
+      id: id,
+      imageUrl: json[imageUrlKey],
       title: json[titleKey],
       artist: json[artistKey],
       duration: Duration(milliseconds: json[durationKey]),
@@ -23,7 +25,7 @@ class SongDto {
   /// Convert Song to JSON
   Map<String, dynamic> toJson(Song song) {
     return {
-      idKey: song.id,
+      imageUrlKey: song.imageUrl ,
       titleKey: song.title,
       artistKey: song.artist,
       durationKey: song.duration.inMilliseconds,

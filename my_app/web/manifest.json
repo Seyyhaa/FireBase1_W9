@@ -1,6 +1,6 @@
 {
-    "name": "my_app",
-    "short_name": "my_app",
+    "name": "myfirst_firebase",
+    "short_name": "myfirst_firebase",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
