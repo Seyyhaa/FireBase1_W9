@@ -17,7 +17,7 @@ class SongDto {
       id: id,
       imageUrl: json[imageUrlKey],
       title: json[titleKey],
-      artist: json[artistKey],
+      artistId: json[artistKey],
       duration: Duration(milliseconds: json[durationKey]),
     );
   }
@@ -27,7 +27,7 @@ class SongDto {
     return {
       imageUrlKey: song.imageUrl ,
       titleKey: song.title,
-      artistKey: song.artist,
+      artistKey: song.artistId,
       durationKey: song.duration.inMilliseconds,
     };
   }
