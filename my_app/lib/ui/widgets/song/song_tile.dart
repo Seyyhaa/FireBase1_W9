@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../model/songs/song.dart';
+import 'package:myfirst_firebase/model/songs/song.dart';
 
 class SongTile extends StatelessWidget {
   const SongTile({

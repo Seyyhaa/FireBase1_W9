@@ -1,6 +1,6 @@
 // song_repository_mock.dart
 
-import '../../../model/songs/song.dart';
+import 'package:myfirst_firebase/model/songs/song.dart';
 import 'song_repository.dart';
 
 class SongRepositoryMock implements SongRepository {

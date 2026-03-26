@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'view_model/library_view_model.dart';
-import '../../../data/repositories/songs/song_repository.dart';
-import '../../states/player_state.dart';
+import 'package:myfirst_firebase/data/repositories/songs/song_repository.dart';
+import 'package:myfirst_firebase/ui/states/player_state.dart';
 import 'widgets/library_content.dart';
 
 class LibraryScreen extends StatelessWidget {
